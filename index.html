@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bundle & Save</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Bundle & Save</h1>
+
+    <div>
+        <input type="radio" name="bundleOption" value="1pair" onclick="showOptions('option1-options')">
+        <label>1 Pair <br>
+            <span class="amount">DKK195.00</span>
+            <span class="offer">50% OFF</span>
+        </label>
+
+        <!-- Color and size options for Option 1 -->
+        <span class="options-container" id="option1-options">
+            Color:
+            <select name="color_option1">
+                <option value="select">select</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <!-- Add more color options here -->
+            </select>
+
+            Size:
+            <select name="size_option1">
+                <option value="select">select</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <!-- Add more size options here -->
+            </select>
+        </div>
+    </div>
+
+    <div>
+        <input type="radio" name="bundleOption" value="2pairs" onclick="showOptions('option2-options')">
+        <label>2 Pairs<br>
+            <span class="amount">DKK 345.00</span>
+            <span class="mostpopular">Most Popular</span>
+            <span class="offer">40% OFF</span>
+            <span class="price">DKK 195.00</span>
+        </label>
+
+        <!-- Color and size options for Option 2 -->
+        <span class="options-container" id="option2-options">
+            Color:
+            <select name="color_option2">
+                <option value="select">select</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <!-- Add more color options here -->
+            </select>
+
+            Size:
+            <select name="size_option2">
+                <option value="select">select</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <!-- Add more size options here -->
+            </select>
+        </div>
+    </div>
+
+    <div>
+        <input type="radio" name="bundleOption" value="3pairs" onclick="showOptions('option3-options')">
+        <label>3 Pairs<br>
+            <span class="amount">DKK 528.00</span>
+            <span class="offer">60% OFF</span>
+        </label>
+
+        <!-- Color and size options for Option 3 -->
+        <span class="options-container" id="option3-options">
+            Color:
+            <select name="color_option3">
+                <option value="select">select</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <!-- Add more color options here -->
+            </select>
+
+            Size:
+            <select name="size_option3">
+                <option value="select">select</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <!-- Add more size options here -->
+            </select>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <span class="free-shipping">Free 2-Day Shipping</span>
+    <span class="total">Total: DKK 360.00</span>
+
+    <button class="add-to-cart-button">+ Add to Cart</button>
+
+    <p>©Powered by Pumper</p>
+
+    <script>
+        function showOptions(id) {
+            const optionsContainer = document.getElementById(id);
+            if (optionsContainer) {
+                const allOptionContainers = document.getElementsByClassName('options-container');
+                for (const container of allOptionContainers) {
+                    container.style.display = 'none';
+                }
+                optionsContainer.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

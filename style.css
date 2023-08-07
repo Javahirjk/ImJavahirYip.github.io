@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    position: relative; /* Add relative positioning to the body */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+   
+    text-align: center;
+    color: green;
+}
+
+div {
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin: 20px auto;
+    width: 40%;
+    height: 25%;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="radio"]:checked {
+    background-color: green; /* Change the background color when checked */
+    border-color: green; /* Change the border color when checked */
+}
+
+.options-container {
+    display: none;
+    margin-top: 10px;
+}
+
+select {
+    margin-top: 5px;
+}
+
+span.amount {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.offer {
+    display: flex;
+    position: absolute;
+    left: 60%;
+}
+
+.mostpopular {
+    display: flex;
+    position: absolute;
+    left: 57%;
+    bottom: 55%;
+    font-family: bold;
+    color: #28852c;
+}
+
+span.price {
+    display: flex;
+    color: #666;
+    font-size: 12px;
+    margin-left: 10px;
+    position: absolute;
+    left: 43%;
+    bottom: 50%;
+    font-size: small;
+    text-decoration: line-through;
+    color: darkgray;
+}
+
+span.free-shipping {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #009900;
+    text-align: center; /* Center the text horizontally */
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 5px;
+}
+
+span.total {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    position: absolute;
+    bottom: 13%;
+    border-radius: 5px;
+    font-size: 14px;
+    left: 58%; /* Center the button horizontally */
+    width: 35%; /* Set the button width to be equal to the container width */
+}
+
+button.add-to-cart-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #009900;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position:absolute;
+    top: 90%; /* Center the button vertically */
+    left: 30%; /* Center the button horizontally */
+    width: 38%;
+
+}
+
+p {
+    text-align:center;
+    margin-top: 30px;
+    color: #666;
+    
+}
+
+/* Add any additional styling you want here */
